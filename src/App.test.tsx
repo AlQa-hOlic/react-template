@@ -1,8 +1,10 @@
 import { render } from '@testing-library/react'
+import { describe, it } from 'vitest'
 
 import App from './App'
 
-test('Renders main page correctly', () => {
-  render(<App />)
-  expect(1 + 1).toBe(2)
+describe('App', () => {
+  it('Should render', () => {
+    render(<App />)
+  })
 })
